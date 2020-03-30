@@ -1,9 +1,12 @@
-import 'package:flutter/material.dart';
+
 
 class Run{
   final double distance;
-  final double time;
+  final Duration duration;
 
-  Run(this.distance, this.time);
+  Run(this.distance, this.duration);
 
+  double _getAverageSpeed(){
+    return this.distance/ (this.duration.inSeconds) * 3.6;
+  }
 }
