@@ -59,24 +59,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-
-      floatingActionButton: _selectedIndex == 1
-          ? Container(
-              height: 80.0,
-              width: 200.0,
-              child: FittedBox(
-                child: FloatingActionButton(
-                  tooltip: 'Get Current Position',
-                  backgroundColor: Colors.amber[800],
-                  child:
-
-                       Icon(Icons.play_arrow),
-                      //child: Text('Start run'),
-                ),
-              ),
-            )
-          : null,
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
